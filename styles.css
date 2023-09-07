@@ -1,0 +1,147 @@
+/* Reset and Global Styles */
+body,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Container Styles */
+.section-container {
+  width: 90%;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+/* Section Styles */
+.section {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Swatch and Font Block Styles */
+.color-swatch,
+.font-block,
+.type-block {
+  flex: 0 0 calc(25% - 2rem);
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.type-block {
+  flex: 0 0 90%;
+}
+/* Color Styles */
+.color-swatch h3 {
+  font-size: 0.8rem;
+}
+.color-swatch p {
+  font-size: 0.7rem;
+}
+
+.color-1 {
+  background-color: #6e4b6b;
+}
+.color-2 {
+  background-color: #537197;
+}
+.color-3 {
+  background-color: #42a1a5;
+}
+.color-4 {
+  background-color: #cbc2bb;
+}
+.color-5 {
+  background-color: #be867e;
+}
+.color-6 {
+  background: #000;
+  color: #fff;
+}
+
+/* Font Styles */
+.font-block h3,
+.font-block p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.font-1-name,
+.font-1-bold,
+.font-1-italic {
+  font-family: "Merriweather", serif;
+}
+.font-2-name,
+.font-2-bold,
+.font-2-italic {
+  font-family: "Roboto", sans-serif;
+}
+.font-3-name,
+.font-3-bold,
+.font-3-italic {
+  font-family: "Space Mono", monospace;
+}
+
+.font-1-bold,
+.font-2-bold,
+.font-3-bold {
+  font-weight: bold;
+}
+.font-1-italic,
+.font-2-italic,
+.font-3-italic {
+  font-style: italic;
+}
+
+.type-1-name {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Merriweather", serif;
+}
+
+.type-2-name {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.type-3-name {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .color-swatch,
+  .font-block {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .color-swatch,
+  .font-block {
+    flex: 0 0 calc(100% - 2rem);
+  }
+}
