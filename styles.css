@@ -40,7 +40,7 @@ body {
 .font-block,
 .type-block {
   flex: 0 0 calc(25% - 2rem);
-  /* margin: 1rem; */
+  margin-bottom: 10px;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -113,7 +113,11 @@ body {
 .font-3-italic {
   font-style: italic;
 }
-
+.type-title {
+  background-color: #cbc2bb;
+  padding: 5px;
+  border-radius: 3px;
+}
 .type-1-name {
   font-weight: 700;
   font-size: 26px;
@@ -131,6 +135,10 @@ body {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
 }
+.type-block ul {
+  width: 90%;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .color-swatch,
